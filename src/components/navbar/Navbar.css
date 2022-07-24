@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--color-white);
-	padding: 1.5rem 0; 
+	padding: 1rem 0; 
 	opacity: 0.85;
 }
 
@@ -25,7 +25,7 @@
 	justify-content: end;
 	align-items: center;
 	list-style: none;
-	margin: 0 3rem;
+	margin: 0 2rem;
 }
 
 .app__navbar-links li{
@@ -44,3 +44,77 @@
 	color: var(--color-red2);
 	border-bottom: 1px solid var(--color-red2);
 }
+
+.app__navbar-smallscreen{
+	display: none;
+}
+
+.app__navbar-smallscreen_overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--color-white);
+	flex-direction: column;
+	z-index: 6;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close{
+	font-size: 2.5rem;
+	color: var(--color-red);
+	cursor: pointer;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+.app__navbar-smallscreen_links{
+	list-style: none;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 18rem auto;
+}
+
+.app__navbar-smallscreen_links li{
+	margin: 1.5rem 0;
+	font-size: 1.5rem;
+	align-items: center;
+}
+
+.app__navbar-smallscreen_links li a{
+	text-decoration: none;
+	color: var(--color-red);
+}
+
+.app__navbar-smallscreen_links li a:hover{
+	color: var(--color-red2);
+}
+
+@media screen and (max-width: 2000px){
+	.app__navbar-logo img{
+		width: 9rem;
+	}
+}
+
+@media screen and (max-width: 1150px){
+	.app__navbar-links{
+		display: none;
+	}
+
+	.app__navbar-smallscreen{
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.app__navbar{
+		padding: 1rem;	
+	}
+
+	.app__navbar-logo img{
+		width: 10rem;
+	}
+}
+
