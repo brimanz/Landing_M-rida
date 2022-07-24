@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	min-height: 100vh;
+	background-image: url('./assets/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/*variables*/
+:root{
+	--color-white: #ffffff;	
+	--color-red: #c31432;
+	--color-red2: #ED213A;
+}
