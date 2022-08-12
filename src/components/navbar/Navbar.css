@@ -3,8 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--color-white);
-	padding: 1rem 0; 
+	background-color: var(--color-white); 
 	opacity: 0.85;
 }
 
@@ -15,15 +14,12 @@
 }
 
 .app__navbar-logo img{
-	width: 9rem;
+	width: 8rem;
 	margin: 0 1rem;	
 }
 
 .app__navbar-links{
-	flex: 1;
 	display: flex;
-	justify-content: end;
-	align-items: center;
 	list-style: none;
 	margin: 0 2rem;
 }
@@ -35,7 +31,7 @@
 .app__navbar-links li a{
 	text-decoration: none;
 	color: var(--color-red);
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	font-family: sans-serif;
 }
@@ -61,7 +57,7 @@
 }
 
 .app__navbar-smallscreen_overlay .overlay__close{
-	font-size: 2.5rem;
+	font-size: 2.4rem;
 	color: var(--color-red);
 	cursor: pointer;
 	position: absolute;
@@ -79,20 +75,21 @@
 
 .app__navbar-smallscreen_links li{
 	margin: 1.5rem 0;
-	font-size: 1.5rem;
 	align-items: center;
 }
 
 .app__navbar-smallscreen_links li a{
 	text-decoration: none;
 	color: var(--color-red);
+	font-size: 1.2rem;
 }
 
 .app__navbar-smallscreen_links li a:hover{
 	color: var(--color-red2);
 }
 
-@media screen and (max-width: 2000px){
+
+@media screen and (min-width: 2000px){
 	.app__navbar-logo img{
 		width: 9rem;
 	}
@@ -115,6 +112,18 @@
 
 	.app__navbar-logo img{
 		width: 10rem;
+	}
+}
+
+@media screen and (max-width: 350px){
+	.app__navbar{
+		padding: 0.5rem;
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.app__navbar-logo img{
+		width: 5.5rem;
 	}
 }
 
