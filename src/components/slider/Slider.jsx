@@ -50,7 +50,11 @@ const Slider = ({imageSrc, title, subtitle, flipped}) =>{
 
 
 	return(
-		<div className="app__slider" ref={ref}>
+		<div 
+			className={inView ? "app__slider app__slider--zoom" : "app__slider"} 
+			ref={ref}
+			id="about"
+		>
 			{renderContent()}			
 		</div>
 

@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = ({imageSrc}) =>{
 	return(
-		<div className="app__hero">
+		<div className="app__hero" id="home">
 			<img 
 				src={imageSrc} 
 				alt="hero_bg" 
