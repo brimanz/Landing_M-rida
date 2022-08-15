@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import Slider from './components/slider/Slider';
+import Activities from './components/activities/Activities';
 
 //styles
 import './index.css';
@@ -14,10 +15,23 @@ import Img2 from "./assets/paisaje.jpg"
 import Img3 from "./assets/cultura.jpg"
 import Img4 from "./assets/pueblo.jpg"
 
+
+//navbar elements
+const navbarLinks = [
+  {url: "#home", title: "Home" },
+  {url: "#about", title: "Sobre merida" },
+  {url: "#activities", title: "Actividades" },
+  {url: "#places", title: "Lugares" },
+];
+
+
+
 const App = () =>{
   return(
     <div className="App">
+      <Navbar navbarLinks={navbarLinks}/>
       <Hero imageSrc={Bg}/>
+
       <Slider 
         imageSrc={Img2} 
         title={"Paisajes hermosos"}
@@ -35,6 +49,9 @@ const App = () =>{
         subtitle={"Descubre la belleza de nuestros pueblos trabajadores"}
         flipped={false}
       />
+
+      <Activities/>
+
     </div>
   );
 }

@@ -1,68 +1,48 @@
 import React, {useState} from 'react';
-import {BsFillGrid3X3GapFill, BsFillXCircleFill} from 'react-icons/bs';
-import './Navbar.css';
-import Logo from '../../assets/logo.png'
+import './Navbar.css'
+import {FiAlignJustify, FiX} from "react-icons/fi";
 
 
-const Navbar = () => {
+const Navbar = ({navbarLinks}) =>{
+  
+  const [menuClicked, setMenuClicked] = useState(false);
 
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const toggleMenuClick = () =>{
+    setMenuClicked(!menuClicked)
+  };
 
 
   return(
     <nav className="app__navbar">
+      <span>
+        Mérida
+      </span>
 
-      <div className="app__navbar-logo">
-        <img src={Logo} alt="logo"/>
-      </div>
+      {menuClicked 
+        ? (<FiAlignJustify 
+            className="app__navbar_menu" 
+            onClick={toggleMenuClick}
+          />)
 
-      <ul className="app__navbar-links">
-        <li>
-          <a href="#home">Inicio</a>
-        </li>
-        <li>
-          <a href="#about">Sobre Mérida</a>
-        </li>
-        <li>
-          <a href="#places">Lugares</a>
-        </li>
-        <li>
-          <a href="#activity">Actividades</a>
-        </li>
-      </ul>
+        : ( 
+          <FiX
+            className="app__navbar_menu"
+            onClick={toggleMenuClick}
+          />)
+      }
 
-      <div className="app__navbar-smallscreen">
-        <BsFillGrid3X3GapFill
-          color="#c31432" 
-          fontSize={24}
-          onClick={() => setToggleMenu(true)}
-          cursor="pointer"
-        />
-
-        {toggleMenu && (
-            <div className="app__navbar-smallscreen_overlay">
-              <BsFillXCircleFill
-                className="overlay__close"
-                onClick={() => setToggleMenu(false)}
-              />
-
-              <ul className="app__navbar-smallscreen_links">
-                <li>
-                  <a href="#home">Inicio</a>
-                </li>
-                <li>
-                  <a href="#about">Sobre Mérida</a>
-                </li>
-                <li>
-                  <a href="#places">Lugares</a>
-                </li>
-                <li>
-                  <a href="#activity">Actividades</a>
-                </li>
-              </ul>
-          </div>
-        )}
-      </div>
+      <ul 
+        className={menuClicked ? "app__navbar_list" : "app__navbar_list app__navbar_list--active"}
+      >
+        {navbarLinks.map(item => {
+        return(
+          <li className="app__navbar_item" key={item.title}>
+            <a className="app__navbar_link" href={item.url}>
+              {item.title}
+            </a>
+          </li>
+        )
+      })}</ul>
     </nav>
   );
 }

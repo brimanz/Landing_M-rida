@@ -4,10 +4,19 @@
 	box-sizing: border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background: var(--color-white);
+}
+
 /*variables*/
 :root{
-	--color-white: #ffffff;	
+	--color-white: #f5f5f5;	
 	--color-red: #c31432;
 	--color-red2: #ED213A;
 	--color-golden: #FDC830;
+	--color-black: #414345;
 }

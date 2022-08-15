@@ -1,0 +1,8 @@
+.app__activities{
+	width: 100%;
+	display: flex;
+	padding: 2rem 1rem;
+	height: 20rem;
+	margin-top: 3rem;
+}
+
