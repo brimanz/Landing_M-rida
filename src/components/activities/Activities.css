@@ -25,6 +25,9 @@
 	transition: 250ms;
 }
 
+.app__activities_main-title{
+	margin-top: 4rem;
+}
 
 .app__activities_content h1{
 	font-family: sans-serif;

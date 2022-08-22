@@ -7,6 +7,7 @@ import Hero from './components/hero/Hero';
 import Slider from './components/slider/Slider';
 import Activities from './components/activities/Activities';
 import Places from './components/places/Places';
+import Title from './components/title/Title';
 
 
 //images
@@ -16,6 +17,7 @@ import Img3 from "./assets/cultura.jpg"
 import Img4 from "./assets/pueblo.jpg"
 import Img5 from "./assets/laguna.jpg"
 import Img6 from "./assets/merida.jpg"
+import Img7 from "./assets/zoo.jpg"
 
 
 //navbar elements
@@ -34,6 +36,9 @@ const App = () =>{
       <Navbar navbarLinks={navbarLinks}/>
       <Hero imageSrc={Bg}/>
 
+      <Title
+        title={"Sobre Mérida"}
+      />
       {/*about merida*/}
       <Slider 
         imageSrc={Img2} 
@@ -55,6 +60,9 @@ const App = () =>{
 
       <Activities/>
 
+      <Title
+        title={"Lugares que debes Visitar"}
+      />
       {/*merida places*/}
       <Places 
         imageSrc={Img5} 
@@ -67,6 +75,12 @@ const App = () =>{
         title={"Páramos lugares de altura"}
         subtitle={"Tierra donde los trabajadores cultivan"}
         flipped={false}
+      />
+      <Places 
+        imageSrc={Img7} 
+        title={"Parque zoologico"}
+        subtitle={"Lugar emblemático para compartir y disfrutar"}
+        flipped={true}
       />
 
     </div>

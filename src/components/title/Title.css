@@ -1,0 +1,7 @@
+.app__title{
+	margin: 2rem;
+	text-align: center;
+	color: var(--color-red2);
+	font-size: 1.6rem;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+}

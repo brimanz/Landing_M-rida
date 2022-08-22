@@ -57,7 +57,6 @@ const Places = ({imageSrc, title, subtitle, flipped}) =>{
 		>
 			{renderContent()}			
 		</div>
-
 	);
 }
 
