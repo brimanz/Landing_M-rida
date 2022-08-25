@@ -27,6 +27,7 @@ const navbarLinks = [
   {url: "#about", title: "Sobre merida" },
   {url: "#activities", title: "Actividades" },
   {url: "#places", title: "Lugares" },
+  {url: "#gallery", title: "Galería" },
 ];
 
 
@@ -83,6 +84,12 @@ const App = () =>{
         subtitle={"Lugar emblemático para compartir y disfrutar"}
         flipped={true}
       />
+
+      <Title
+        title={"Galería de imagenes"}
+      />
+
+      <Gallery/>
 
     </div>
   );
