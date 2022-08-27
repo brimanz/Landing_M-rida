@@ -10,7 +10,6 @@ import Places from './components/places/Places';
 import Title from './components/title/Title';
 import Gallery from './components/gallery/Gallery';
 
-
 //images
 import Bg from './assets/bg.jpg';
 import Img2 from "./assets/paisaje.jpg"
@@ -20,7 +19,6 @@ import Img5 from "./assets/laguna.jpg"
 import Img6 from "./assets/merida.jpg"
 import Img7 from "./assets/zoo.jpg"
 
-
 //navbar elements
 const navbarLinks = [
   {url: "#home", title: "Home" },
@@ -29,7 +27,6 @@ const navbarLinks = [
   {url: "#places", title: "Lugares" },
   {url: "#gallery", title: "Galería" },
 ];
-
 
 
 const App = () =>{

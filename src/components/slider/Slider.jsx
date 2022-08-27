@@ -17,7 +17,7 @@ const Slider = ({imageSrc, title, subtitle, flipped}) =>{
 					<img 
 						src={imageSrc} 
 						alt="img1" 
-						className="app__slider_imgage"
+						className="app__slider_image"
 					/>
 					
 					<div className="app__slider_content">
@@ -41,7 +41,7 @@ const Slider = ({imageSrc, title, subtitle, flipped}) =>{
 					<img 
 						src={imageSrc} 
 						alt="slider_image" 
-						className="app__slider_imgage"
+						className="app__slider_image"
 					/>
 				</>
 			);

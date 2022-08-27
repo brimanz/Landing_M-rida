@@ -29,3 +29,13 @@
 	color: var(--color-golden);
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
 }
+
+@media (max-width: 480px){
+	.app__hero_title{
+		font-size: 2.6rem;
+	}
+
+	.app__hero_subtitle{
+		font-size: 1.3rem;	
+	}
+}

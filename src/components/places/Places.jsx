@@ -17,11 +17,11 @@ const Places = ({imageSrc, title, subtitle, flipped}) =>{
 					<img 
 						src={imageSrc} 
 						alt="img1" 
-						className="app__slider_imgage"
+						className="app__places_imgage"
 					/>
 					
-					<div className="app__slider_content">
-						<h1 className="app__slider_content-title">
+					<div className="app__places_content">
+						<h1 className="app__places_content-title">
 							{title}
 						</h1>
 						<p>{subtitle}</p>
@@ -31,8 +31,8 @@ const Places = ({imageSrc, title, subtitle, flipped}) =>{
 		}else{
 			return(
 				<>
-					<div className="app__slider_content">
-						<h1 className="app__slider_content-title">
+					<div className="app__places_content">
+						<h1 className="app__places_content-title">
 							{title}
 						</h1>
 						<p>{subtitle}</p>
@@ -41,7 +41,7 @@ const Places = ({imageSrc, title, subtitle, flipped}) =>{
 					<img 
 						src={imageSrc} 
 						alt="slider_image" 
-						className="app__slider_imgage"
+						className="app__places_imgage"
 					/>
 				</>
 			);
@@ -51,7 +51,7 @@ const Places = ({imageSrc, title, subtitle, flipped}) =>{
 
 	return(
 		<div 
-			className={inView ? "app__slider app__slider--zoom" : "app__slider"} 
+			className={inView ? "app__places app__places--zoom" : "app__places"} 
 			ref={ref}
 			id="places"
 		>
