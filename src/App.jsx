@@ -9,6 +9,7 @@ import Activities from './components/activities/Activities';
 import Places from './components/places/Places';
 import Title from './components/title/Title';
 import Gallery from './components/gallery/Gallery';
+import Footer from './components/footer/Footer';
 
 //images
 import Bg from './assets/bg.jpg';
@@ -87,6 +88,7 @@ const App = () =>{
       />
 
       <Gallery/>
+      <Footer/>
 
     </div>
   );

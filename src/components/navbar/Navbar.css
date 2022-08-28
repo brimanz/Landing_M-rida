@@ -17,7 +17,6 @@
 	font-family: sans-serif;
 	color: var(--color-golden);
 	text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.72);
-
 }
 
 .app__navbar_list{
@@ -90,7 +89,7 @@
 		margin: 0;
 		border-width: 0;
 		background: var(--color-black);
-		opacity: 0.63;
+		opacity: 2;
 	}
 
 	.app__navbar_link:hover{

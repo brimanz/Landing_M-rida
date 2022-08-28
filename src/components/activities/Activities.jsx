@@ -3,8 +3,6 @@ import './Activities.css'
 import {GrBike, GrRun, GrYoga, GrSwim} from "react-icons/gr";
 
 
-
-
 const Activities = () =>{
 	return(
 		<div>

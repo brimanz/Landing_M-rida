@@ -40,7 +40,7 @@
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
 }
 
-.app__places_imgage{
+.app__places_image{
 	opacity: 0.8;
 	width: 40rem;
 	height: 35rem;
@@ -48,6 +48,54 @@
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.65);
 }
 
-.app__places_imgage:hover{
+.app__places_image:hover{
 	opacity: 1;
 }
+
+
+@media (max-width: 991px){
+	.app__places{
+		width: 90%;
+		display: flex;
+	}
+
+	.app__places_image{
+		width: 20rem;
+		height: 18rem;
+	}
+
+	.app__places_content-title{
+		font-size: 2.12rem;
+	}
+
+	.app__places_content p{
+		font-size: 1.12rem;
+	}
+}
+
+@media (max-width: 480px){
+	.app__places{
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.app__places_image{
+		width: 22rem;
+		height: 19rem;
+	}
+
+	.app__places_content{
+		margin: 1rem;
+		padding: 0.5rem
+	}
+
+	.app__places_content-title{
+		font-size: 1.8rem;
+	}
+
+	.app__places_content p{
+		font-size: 1rem;
+	}
+}
+

@@ -17,7 +17,7 @@ const Places = ({imageSrc, title, subtitle, flipped}) =>{
 					<img 
 						src={imageSrc} 
 						alt="img1" 
-						className="app__places_imgage"
+						className="app__places_image"
 					/>
 					
 					<div className="app__places_content">
@@ -41,7 +41,7 @@ const Places = ({imageSrc, title, subtitle, flipped}) =>{
 					<img 
 						src={imageSrc} 
 						alt="slider_image" 
-						className="app__places_imgage"
+						className="app__places_image"
 					/>
 				</>
 			);

@@ -48,3 +48,39 @@
 	border-radius: 50%;
 }
 
+@media (max-width: 991px){
+	.app__activities{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+
+
+
+
+	.app__activities_content{
+		width: 95%;
+		height: 8rem;
+		margin: 0.5rem 0.5rem;
+		text-align: center;
+	}
+}
+
+
+
+
+@media (max-width: 480px){
+	.app__activities{
+		display: flex;
+		flex-direction: column;
+		margin-top: 2rem;
+		margin-bottom: 13rem;
+	}
+
+	.app__activities_content{
+		width: 95%;
+		height: 8rem;
+		margin: 0.5rem 0.5rem;
+	}
+}
+
