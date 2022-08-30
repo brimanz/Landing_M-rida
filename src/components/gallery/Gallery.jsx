@@ -3,17 +3,7 @@ import './Gallery.css';
 import {AiFillCloseCircle} from "react-icons/ai";
 
 
-import Img1 from '../../assets/para1.jpg';
-import Img2 from '../../assets/nieve.jpg';
-import Img3 from '../../assets/obs2.jpg';
-import Img4 from '../../assets/laguna3.jpg';
-import Img5 from '../../assets/laguna2.jpg';
-import Img6 from '../../assets/para2.jpg';
-import Img7 from '../../assets/laguna4.jpg';
-import Img8 from '../../assets/tele.jpg';
-import Img9 from '../../assets/nieve2.jpg';
-import Img10 from '../../assets/obs1.jpg';
-import Img11 from '../../assets/para3.jpg';
+import{ Img1, Img22, Img33, Img44, Img55, Img66, Img77, Img8, Img9, Img10, Img11} from '../../assets';
 
 
 const Gallery = () =>{
@@ -25,35 +15,35 @@ const Gallery = () =>{
 		},
 		{
 			id: 2,
-			imageSrc: Img2, 
+			imageSrc: Img22, 
 		}, 
 		{
 			id: 3,
-			imageSrc: Img3, 
+			imageSrc: Img33, 
 		},
 		{
 			id: 4,
-			imageSrc: Img4,
+			imageSrc: Img44,
 		},
 		{
 			id: 5,
-			imageSrc: Img5, 
+			imageSrc: Img55, 
 		}, 
 		{
 			id: 6,
-			imageSrc: Img6 
+			imageSrc: Img66, 
 		}, 
 		{
 			id: 7,
-			imageSrc: Img7
+			imageSrc: Img77,
 		}, 
 		{
 			id: 8,
-			imageSrc: Img8
+			imageSrc: Img8,
 		}, 
 		{
 			id: 9,
-			imageSrc: Img9
+			imageSrc: Img9,
 		},
 		{
 			id: 10,

@@ -2,23 +2,10 @@ import React from 'react';
 import './index.css';
 
 //components import
-import Navbar from './components/navbar/Navbar';
-import Hero from './components/hero/Hero';
-import Slider from './components/slider/Slider';
-import Activities from './components/activities/Activities';
-import Places from './components/places/Places';
-import Title from './components/title/Title';
-import Gallery from './components/gallery/Gallery';
-import Footer from './components/footer/Footer';
+import { Navbar, Hero, Slider, Activities, Places, Title, Gallery, Footer} from './components';
 
 //images
-import Bg from './assets/bg.jpg';
-import Img2 from "./assets/paisaje.jpg"
-import Img3 from "./assets/cultura.jpg"
-import Img4 from "./assets/pueblo.jpg"
-import Img5 from "./assets/laguna.jpg"
-import Img6 from "./assets/merida.jpg"
-import Img7 from "./assets/zoo.jpg"
+import {Bg, Img2, Img3, Img4, Img5, Img6, Img7} from './assets';
 
 //navbar elements
 const navbarLinks = [
