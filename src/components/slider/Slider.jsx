@@ -5,7 +5,7 @@ import {useInView} from 'react-intersection-observer';
 
 const Slider = ({imageSrc, title, subtitle, flipped}) =>{
 
-	const {ref, inView, entry} = useInView({
+	const {ref, inView} = useInView({
 		/*options*/
 		threshold: 0.3,
 	});
