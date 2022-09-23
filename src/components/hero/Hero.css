@@ -39,3 +39,13 @@
 		font-size: 1.3rem;	
 	}
 }
+
+@media (max-width: 388px){
+	.app__hero_title{
+		font-size: 2rem;
+	}
+
+	.app__hero_subtitle{
+		font-size: 1rem;	
+	}
+}
